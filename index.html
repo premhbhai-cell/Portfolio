@@ -55,10 +55,8 @@ Hire Me
 
 <p class="hello">Hello I Am Prem Jha</p>
 
-<h1>
-Front-End <br>
-<span>Developer</span>
-</h1>
+<h1>Front-End <span class="typing"></span></h1>
+
 
 <p class="desc">
 Creative Front-End Developer focused on building modern
@@ -104,6 +102,47 @@ Contact Me
 </div>
 
 </section>
+<script>
+
+const words = ["Developer","Designer","Freelancer"];
+let i = 0;
+let j = 0;
+let currentWord = "";
+let isDeleting = false;
+
+function type(){
+
+currentWord = words[i];
+
+if(isDeleting){
+j--;
+}else{
+j++;
+}
+
+document.querySelector(".typing").textContent = currentWord.substring(0,j);
+
+if(!isDeleting && j === currentWord.length){
+isDeleting = true;
+setTimeout(type,1000);
+return;
+}
+
+if(isDeleting && j === 0){
+isDeleting = false;
+i++;
+if(i === words.length){
+i = 0;
+}
+}
+
+setTimeout(type,120);
+}
+
+type();
+
+</script>
+
 
 
 
