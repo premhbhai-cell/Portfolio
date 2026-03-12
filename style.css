@@ -746,3 +746,185 @@ font-size:28px;
 }
 
 }
+
+/* service card section */
+
+.service-section{
+background:#0f0202;
+padding:120px 0;
+text-align:center;
+}
+
+.service-container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.service-title{
+font-size:34px;
+margin-bottom:70px;
+color:white;
+letter-spacing:1px;
+}
+
+
+/* GRID */
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+}
+
+
+/* CARD */
+
+.service-card{
+
+background:white;
+
+padding:50px 30px;
+
+border-radius:10px;
+
+position:relative;
+
+transition:0.4s;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+
+/* ICON */
+
+.icon-circle{
+
+width:65px;
+height:65px;
+
+background:white;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:22px;
+
+margin:auto;
+margin-top:-80px;
+margin-bottom:20px;
+
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+
+}
+
+
+/* TEXT */
+
+.service-card h3{
+font-size:20px;
+margin-bottom:10px;
+color:#111;
+}
+
+.service-card p{
+font-size:14px;
+color:#555;
+line-height:1.6;
+margin-bottom:25px;
+}
+
+
+/* BUTTON */
+
+.service-btn{
+
+display:inline-block;
+
+padding:10px 26px;
+
+background:#ff2a2a;
+
+color:white;
+
+border-radius:30px;
+
+font-size:14px;
+
+text-decoration:none;
+
+position:relative;
+
+overflow:hidden;
+
+transition:0.3s;
+
+}
+
+
+/* GLASS SHINE */
+
+.service-btn::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:60%;
+height:100%;
+
+background:linear-gradient(
+120deg,
+transparent,
+rgba(255,255,255,0.7),
+transparent
+);
+
+transform:skewX(-20deg);
+
+transition:0.6s;
+
+}
+
+
+/* HOVER EFFECT */
+
+.service-btn:hover::before{
+left:130%;
+}
+
+.service-btn:hover{
+transform:translateY(-2px);
+}
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.service-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+.service-grid{
+grid-template-columns:1fr;
+}
+
+}
+
