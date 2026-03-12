@@ -801,7 +801,15 @@ transform:translateY(-10px);
 box-shadow:0 20px 40px rgba(0,0,0,0.2);
 }
 
+/* HOVER */
 
+.service-card:hover{
+
+transform:translateY(10px);   /* DOWN SIDE MOVE */
+
+border-bottom:10px solid #ff416c;  /* BOTTOM HIGHLIGHT */
+
+}
 /* ICON */
 
 .icon-circle{
@@ -1001,6 +1009,16 @@ flex-direction:column;
 
 .project-card:hover{
 transform:translateY(-10px);
+}
+
+/* HOVER */
+
+.project-card:hover{
+
+transform:translateY(10px);   /* DOWN SIDE MOVE */
+
+border-bottom:10px solid #ff416c;  /* BOTTOM HIGHLIGHT */
+
 }
 
 
@@ -1331,6 +1349,193 @@ grid-template-columns:1fr;
 
 text-align:center;
 
+}
+
+}
+
+
+/* contact section */
+
+.contact-section{
+
+padding:120px 8%;
+
+background:#0b0b0b;
+
+color:white;
+
+}
+
+.contact-container{
+
+max-width:1100px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+}
+
+
+/* LEFT */
+
+.contact-left h2{
+
+font-size:36px;
+
+margin-bottom:20px;
+
+}
+
+.contact-left p{
+
+color:#bbb;
+
+margin-bottom:30px;
+
+line-height:1.6;
+
+}
+
+
+/* INFO BOX */
+
+.contact-info{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.info-box{
+
+background:#111;
+
+padding:18px 20px;
+
+border-radius:10px;
+
+transition:0.3s;
+
+border-left:3px solid transparent;
+
+}
+
+
+/* HOVER */
+
+.info-box:hover{
+
+transform:translateX(10px);
+
+border-left:6px solid #ff416c;
+
+}
+
+
+/* RIGHT FORM */
+
+.contact-right form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.contact-right input,
+.contact-right textarea{
+
+background:#111;
+
+border:none;
+
+padding:14px;
+
+border-radius:8px;
+
+color:white;
+
+outline:none;
+
+}
+
+textarea{
+min-height:120px;
+resize:none;
+}
+
+
+/* BUTTON */
+
+.btn-shine{
+
+background:linear-gradient(45deg,#ff4b2b,#ff416c);
+
+border:none;
+
+padding:12px 25px;
+
+border-radius:25px;
+
+color:white;
+
+cursor:pointer;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+/* GLASS SHINE */
+
+.btn-shine::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:50%;
+height:100%;
+
+background:linear-gradient(
+120deg,
+transparent,
+rgba(255,255,255,0.7),
+transparent
+);
+
+transform:skewX(-20deg);
+
+transition:0.6s;
+
+}
+
+.btn-shine:hover::before{
+left:130%;
+}
+
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+.contact-container{
+grid-template-columns:1fr;
 }
 
 }
