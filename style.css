@@ -583,3 +583,166 @@ text-align:left;
 }
 
 }
+
+/* tool use section */
+
+/* SECTION */
+
+.tools{
+padding:120px 0;
+background:#120404;
+text-align:center;
+}
+
+.tools-small{
+color:#ff2a2a;
+font-size:13px;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.tools-title{
+color:white;
+font-size:36px;
+margin-bottom:60px;
+}
+
+
+/* ROW */
+
+.tools-row{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-bottom:25px;
+flex-wrap:wrap;
+}
+
+
+/* CARD */
+
+.tool-card{
+
+background:white;
+
+width:120px;
+height:130px;
+
+border-radius:12px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+position:relative;
+
+transition:0.3s;
+
+cursor:pointer;
+
+}
+
+/* ICON */
+
+.tool-card img{
+width:38px;
+margin-bottom:8px;
+}
+
+/* TEXT */
+
+.tool-card h3{
+font-size:16px;
+color:#111;
+margin-bottom:2px;
+}
+
+.tool-card p{
+font-size:12px;
+color:#666;
+}
+
+
+/* BOTTOM RED HOVER BAR */
+
+.tool-card::after{
+
+content:"";
+
+position:absolute;
+
+bottom:0;
+left:0;
+
+width:0%;
+height:4px;
+
+background:#ff2a2a;
+
+transition:0.2s;
+
+border-radius:0 0 12px 12px;
+
+}
+
+
+/* HOVER */
+
+.tool-card:hover::after{
+width:100%;
+height: 12px;
+}
+
+.tool-card:hover{
+transform:translateY(-6px);
+}
+
+
+/* BUTTON */
+
+.tools-btn{
+margin-top:50px;
+}
+
+.tools-btn button{
+
+background:#ff2a2a;
+
+border:none;
+
+padding:12px 30px;
+
+border-radius:25px;
+
+color:white;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.tools-btn button:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 10px 25px rgba(207, 6, 6, 0.5);
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.tool-card{
+width:100px;
+height:115px;
+}
+
+.tools-title{
+font-size:28px;
+}
+
+}
