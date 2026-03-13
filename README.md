@@ -19,6 +19,12 @@ hire buttom + whatsapp buttom floting added
 <br>
 footer added
 <br>
+scroll animation add on tested / not liked
+<br>
+
+<br>
+
+
 
 
 

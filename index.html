@@ -148,6 +148,7 @@ type();
 
 <script src="script.js"></script>
 
+<!-- about section -->
 <section class="about">
 <div class="container about-grid">
 
@@ -155,21 +156,21 @@ type();
 
 <div class="about-cards">
 
-<div class="card-img">
+<div class="card-img scroll-animate">
 <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="">
 </div>
 
-<div class="card-box">
-<h2>55k</h2>
+<div class="card-box scroll-animate">
+<h2>14k</h2>
 <p>PROJECT COMPLETED</p>
 </div>
 
-<div class="card-box">
-<h2>99+</h2>
+<div class="card-box scroll-animate">
+<h2>14+</h2>
 <p>OUR HAPPY CLIENTS</p>
 </div>
 
-<div class="card-img">
+<div class="card-img scroll-animate">
 <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="">
 </div>
 
@@ -178,14 +179,14 @@ type();
 
 <!-- RIGHT TEXT -->
 
-<div class="about-text" id="about-text">
+<div class="about-text scroll-animate" id="about-text">
 
 <p class="about-small">ABOUT US</p>
 
 <h2>WHO AM I ?</h2>
 
 <p class="about-desc">
-I'm Your Name, a creative web developer driven by design and inspired by technology.
+I'm Prem jha, a creative web developer driven by design and inspired by technology.
 I specialize in building modern responsive websites that tell stories and connect with people.
 </p>
 
@@ -211,6 +212,28 @@ I specialize in building modern responsive websites that tell stories and connec
 
 </div>
 </section>
+<script>
+
+const observer = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+
+});
+
+},{
+threshold:0.5
+});
+
+document.querySelectorAll(".scroll-animate").forEach((el)=>{
+observer.observe(el);
+});
+
+</script>
+
 
 
 <!-- tool use section -->
