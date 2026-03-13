@@ -14,9 +14,12 @@ conatct form add
 connected with nav bar sections 
 <br>
 
-hire buttom + whatsapp buttom floting added
+hire buttom + whatsapp buttom floting added 
 
 <br>
+footer added
+<br>
+
 
 
 
