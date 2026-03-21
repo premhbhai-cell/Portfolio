@@ -215,7 +215,7 @@ width:560px;
 max-width:100%;
 opacity:0;
 border-radius: 20px;
-margin-right: 70px;
+/* margin-right: 70px; */
 transform:translateY(80px);
 animation:heroImg 1s ease forwards;
 animation-delay:0.5s;
