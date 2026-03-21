@@ -21,7 +21,7 @@ footer added
 <br>
 scroll animation add on tested / not liked
 <br>
-
+FULL LINK WORKING
 <br>
 
 
